@@ -45,6 +45,7 @@ class AmazonIap {
 		if (_purchase==null) {
 			_purchase = JNI.createStaticMethod(EXT_AMAZONIAP, "purchase", "(Ljava/lang/String;)V");
 		}
+		_purchase( sku );
 	}
 
 	function onProductDataResponse (data : String) : Void {
