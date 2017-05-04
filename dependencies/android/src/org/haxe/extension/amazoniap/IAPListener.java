@@ -15,7 +15,7 @@ public class IAPListener implements PurchasingListener {
 			return;
 		}
 		try {
-			Extension_iap_amazon._callback.call1 ("onProductDataResponse", productDataResponse.toJSON());
+			Extension_iap_amazon._callback.call1 ("onProductDataResponse", productDataResponse.toString());
 		} catch (JSONException e) {}
 	}
 
@@ -24,7 +24,7 @@ public class IAPListener implements PurchasingListener {
 			return;
 		}
 		try {
-			Extension_iap_amazon._callback.call1("onPurchaseResponse", purchaseResponse.toJSON());
+			Extension_iap_amazon._callback.call1("onPurchaseResponse", purchaseResponse.toString());
 		} catch (JSONException e) {}
 	}
 
@@ -33,7 +33,7 @@ public class IAPListener implements PurchasingListener {
 			return;
 		}
 		try {
-			Extension_iap_amazon._callback.call1("onPurchaseUpdatesResponse", purchaseUpdatesResponse.toJSON());
+			Extension_iap_amazon._callback.call1("onPurchaseUpdatesResponse", purchaseUpdatesResponse.toString());
 		} catch (JSONException e) {}
 	}
 
@@ -42,7 +42,7 @@ public class IAPListener implements PurchasingListener {
 			return;
 		}
 		try {
-			Extension_iap_amazon._callback.call1("onUserDataResponse", userDataResponse.toJSON());
+			Extension_iap_amazon._callback.call1("onUserDataResponse", userDataResponse.toString());
 		} catch (JSONException e) {}
 	}
 
